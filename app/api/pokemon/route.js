@@ -22,7 +22,7 @@ export const fetchAPI = async (pokemonId) => {
 
 export async function GET(req) {
     try {
-        const numberArray = Array.from({ length: 151 }, (_, i) => i + 1);
+        const numberArray = Array.from({ length: 649 }, (_, i) => i + 1);
 
         const response = await Promise.all(numberArray.map((el) => fetchAPI(el)));
 

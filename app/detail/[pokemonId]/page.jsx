@@ -18,7 +18,7 @@ export default async function Detail({ params }) {
     const { pokemonId } = params;
     const { pokemon } = await getPokemon(pokemonId);
     console.log(pokemon);
-    if (Number(pokemonId) > 151) {
+    if (Number(pokemonId) > 649) {
         return <NotFound />;
     } else {
         return (
